@@ -1,0 +1,138 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #2c3e50, #8e44ad);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+/* Main wrapper (phone-sized app container) */
+.app-container {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Overview title - fully centered */
+.app-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* My Account - centered in left half */
+.half-align {
+  width: 50%;
+  /* Left half of the container */
+  display: flex;
+  justify-content: center;
+  /* Center content inside this half */
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Expense Card */
+.card {
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.card {
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Section */
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.balance {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  background-color: #292940;
+  border-radius: 8px;
+  margin: 0 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Bar Chart Placeholder */
+.bar-placeholder {
+  background-color: #333;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Summary Items */
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
